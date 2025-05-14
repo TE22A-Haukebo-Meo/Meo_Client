@@ -8,7 +8,7 @@ public class Networking {
         Socket client = null;
 
         // Default port number we are going to use
-        int portnumber = 1234;
+        int portnumber = 5000;
         if (args.length >= 1){
             portnumber = Integer.parseInt(args[0]);
         }
@@ -32,7 +32,7 @@ public class Networking {
                 // Create BufferedReader for a standard input
                 BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
 
-                System.out.println("Enter your name. Type Bye to exit. ");
+                System.out.println("Enter math expression. Type Bye to exit. ");
 
                 // Read data from standard input device and write it
                 // to the output stream of the client socket.
